@@ -1,0 +1,98 @@
+.square{
+	border: 10px black solid;
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+}
+
+.circle{
+	border-radius: 50%;
+	background-color: black;
+	width: 30px;
+	height: 30px;
+}
+
+.one{
+
+	position: absolute;
+	top: 10px;
+	left:10px;
+}
+.two{
+
+	position: absolute;
+	top: 10px;
+	left:290px;
+}
+.three{
+
+	position: absolute;
+	top: 290px;
+	left:295px;
+}
+.four{
+
+	position: absolute;
+	top: 290px;
+	left:10px;
+}
+
+.striker{
+	border-radius: 50%;
+	background-color: white;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 140px;
+	left:30px;
+	animation-name: strike;
+	animation-duration: .85s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+.put{
+	border-radius: 50%;
+	background-color: red;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 140px;
+	left:120px;
+	animation-name: goal;
+	animation-duration: 1s;
+	animation-delay: .5s;
+	animation-timing-function: linear;
+
+	animation-fill-mode: forwards;
+}
+
+@keyframes strike{
+	0%{
+		left: 30px; top: 140px;
+	}
+
+	50%{
+		left: 90px; top: 140px;  
+	}
+	
+	100%{
+		left: 150px; top: 177px;  
+
+	}
+
+
+}
+
+@keyframes goal{
+	0%{
+		left: 120px; top: 140px;
+	}
+	99%{
+		left: 290px; top: 15px;background-color: red;
+	}
+
+	100%{
+		left: 290px; top: 15px;background-color: black;
+	}
+}
